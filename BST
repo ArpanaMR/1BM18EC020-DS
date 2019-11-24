@@ -50,16 +50,16 @@ void preorder(NODE root)
 if(root==NULL)
  return;
 printf("%d\n",root->data);
-inorder(root->lchild);
-inorder(root->rchild);
+preorder(root->lchild);
+preorder(root->rchild);
 }
 
 void postorder(NODE root)
 {
 if(root==NULL)
  return;
-inorder(root->lchild);
-inorder(root->rchild);
+postorder(root->lchild);
+postorder(root->rchild);
 printf("%d\n",root->data);
 }
 
