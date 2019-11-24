@@ -120,7 +120,7 @@ int main()
 				     for(i=0;i<n;i++)
 				    {
 				    	scanf("%d",&x);
-					    head1=front(x,head1);
+					    head1=insert(x,head1);
 				    }
 				    break;
 			case 2:printf("enter the no. of elements\n");
@@ -129,7 +129,7 @@ int main()
 				     for(i=0;i<n;i++)
 				     {
 				    	scanf("%d",&x);
-				    	head2=front(x,head2);
+				    	head2=insert(x,head2);
 				     }
 				    break;
 			case 3:head1=sort(head1);
