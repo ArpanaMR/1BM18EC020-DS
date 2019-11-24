@@ -6,8 +6,7 @@ struct node
 	struct node *next;
 };
 typedef struct node * NODE;
-NODE insert_front(int item,NODE head);
-void display(NODE head);
+
 NODE getnode()
 {
 	NODE p;
@@ -20,7 +19,7 @@ NODE getnode()
 		exit(0);
 	}
 }
-NODE insert_front(int item,NODE head)
+NODE insert(int item,NODE head)
 {
 	NODE p;
 	p=getnode();
@@ -121,7 +120,7 @@ int main()
 				     for(i=0;i<n;i++)
 				    {
 				    	scanf("%d",&x);
-					    head1=insert_front(x,head1);
+					    head1=front(x,head1);
 				    }
 				    break;
 			case 2:printf("enter the no. of elements\n");
@@ -130,7 +129,7 @@ int main()
 				     for(i=0;i<n;i++)
 				     {
 				    	scanf("%d",&x);
-				    	head2=insert_front(x,head2);
+				    	head2=front(x,head2);
 				     }
 				    break;
 			case 3:head1=sort(head1);
